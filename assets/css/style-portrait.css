@@ -20,14 +20,13 @@ h1 {
     font-family: "IBM Plex Sans", sans-serif;
     font-weight: 700;
     font-style: normal;
-    
 }
 
 p {
     font-family: "IBM Plex Sans", sans-serif;
     font-weight: 600;
     font-style: normal;
-    line-height: 1.250em;
+
 }
 
 a {
@@ -42,12 +41,12 @@ body {
 
 nav {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
+    flex-direction: column;
+    /* align-items: start; */
+    padding-left: 30px;
+    padding-right: 30px;
     margin-top: 5vh;
-    margin-bottom: 3vh;
+    margin-bottom: 10vh;
     /* background-color: gray; */
 }
 
@@ -56,15 +55,18 @@ img {
     display: block;
 }
 
-nav > div:nth-child(1) {
-    border: 2px solid black;
+nav>div:nth-child(1) {
+    margin-bottom: 3vh;
+}
+
+div>h1:nth-child(1) {
+    margin-bottom: 2vh;
 }
 
 .contato {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 32px;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .contato>a {
@@ -85,19 +87,23 @@ nav > div:nth-child(1) {
     flex: 1 1 300px;
 }
 
+.foto-menu>img:hover {}
 
 .return {
     text-align: center;
     margin-right: auto;
     margin-left: auto;
-    background: rgba(0, 0, 0, 0.062);
-    max-width: 15vw;
     margin-top: 15vh;
     margin-bottom: 15vh;
 }
 
-.return > a > p {
+.return>a>p {
     color: #969696;
+    padding: 3%;
+    background: rgba(0, 0, 0, 0.062);
+    max-width: 50%;
+    margin: auto;
+    border-radius: 3px;
 }
 
 .txt-small {
@@ -110,6 +116,7 @@ nav > div:nth-child(1) {
     !important
 }
 
-.txt-small > p , span{
+.txt-small>p,
+span {
     color: #BFBFBF;
 }
