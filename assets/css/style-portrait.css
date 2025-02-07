@@ -41,13 +41,12 @@ body {
 
 nav {
     display: flex;
-    flex-direction: column;
-    /* align-items: start; */
+    flex-direction: column; 
     padding-left: 30px;
     padding-right: 30px;
     margin-top: 5vh;
     margin-bottom: 10vh;
-    /* background-color: gray; */
+    max-width: 100%;
 }
 
 img {
